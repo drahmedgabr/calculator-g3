@@ -7,6 +7,14 @@ function addNumber(number) {
 }
 
 function calculateResult() {
+    equationString = equationString.replaceAll("×", "*");
+    equationString = equationString.replaceAll("÷", "/");
     const result = eval(equationString);
+    equationString = result;
     resultDiv.innerText = result;
+}
+
+function clearScreen() {
+    equationString = "";
+    resultDiv.innerText = 0;
 }
