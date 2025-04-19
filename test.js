@@ -1,5 +1,5 @@
-var equationString = "15+8&times;6&times;2";
+var equationString = "12+5+6";
 
-equationString = equationString.replaceAll("&times;", "*");
+equationString = equationString.slice(0, -1);
 
 console.log(equationString);
