@@ -1,5 +1,13 @@
-var equationString = "12+5+6";
+var equationString = "12+5+8-9*0/6+";
 
-equationString = equationString.slice(0, -1);
+var operators = ["+", "-", "*", "/"];
 
-console.log(equationString);
+var lastCharacter = equationString.slice(-1);
+
+if (operators.includes(lastCharacter)) {
+    console.log("yes");
+    
+} else {
+    console.log("no");
+    
+}
